@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer/Footer";
+import Banner from "./components/Banner/Banner";
+import Header from "./components/Header/Header";
+import Course from "./components/Course/Course";
+
+import courseData from "../src/data/coursedata.json";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [course, setCourse] = useState([]);
+
+	useEffect(() => {
+		setCourse(courseData);
+	}, []);
+
+
+	return (
+		<div className="main">
+			<Header></Header>
+			<Banner></Banner>
+			<Course course={course}></Course>
+			<Footer></Footer>
+		</div>
+	);
 }
 
 export default App;

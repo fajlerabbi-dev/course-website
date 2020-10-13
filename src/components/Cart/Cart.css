@@ -1,0 +1,18 @@
+.course-cart {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px rgba(0,0,0,.1);
+}
+
+p.total-price {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+button.checkout {
+    border: none;
+    padding: 5px 20px;
+    background: #289AD1;
+    border-radius: 50px;
+    color: #fff;
+}

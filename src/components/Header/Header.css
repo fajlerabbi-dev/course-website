@@ -1,0 +1,43 @@
+.header-main {
+    padding: 30px 0;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+
+.site-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigation ul li:not(last) {
+    margin-right: 5px;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+}
+
+.site-navigation ul li a,
+.sign-up a {
+    display: block;
+    padding: 10px 10px;
+    color: #000;
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.site-navigation ul li a:hover,
+.sign-up a:hover {
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sign-up a {
+    display: inline-block;
+}
+
+.sign-up-action {
+    background-color: #EC5250;
+    color:#fff !important;
+}
